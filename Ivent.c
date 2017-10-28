@@ -17,17 +17,17 @@ void main()
 	fprintf(fptr,"Id,Name,Price,Quantity\n");
 	fseek(fptr,0,SEEK_END);
 	int i,n;
-	printf("Enter No. of Items :-");
+	printf("Enter the number of items :-");
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		printf("Item name :-");
+		printf("Item's name :-");
 		scanf("%s",items[i].name);
-		printf("Price :-");
+		printf("Price of %s :-",items[i]);
 		scanf("%d",&items[i].price);
-		printf("Quantity :-");
+		printf("Quantity of %s:-",items[i]);
 		scanf("%d",&items[i].qty);
-		printf("Enter Product ID :-");
+		printf("Enter Product ID of %s:-",items[i]);
 		scanf("%d",&items[i].id);
 	}
 	for(i=0;i<n;i++)
